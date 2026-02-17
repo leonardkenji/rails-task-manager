@@ -1,0 +1,10 @@
+<h1>Task Manager</h1>
+<h2>Edit Task - <%= @task.title %></h2>
+
+<%= form_with model: @task do |t| %>
+  <%= t.label :title %>
+  <%= t.text_field :title %>
+  <%= t.label :details %>
+  <%= t.text_field :details %>
+  <%= t.submit %>
+<% end %>

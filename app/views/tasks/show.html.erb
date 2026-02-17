@@ -1,0 +1,9 @@
+<h1>My Tasks</h1>
+
+<%= link_to 'Edit', edit_path %>
+
+<p> <%= @task.title %> </p>
+<p> <%= @task.details %></p>
+<p>  Is completed? <%= @task.completed %> </p>
+
+<%= link_to 'Home', tasks_path %>
